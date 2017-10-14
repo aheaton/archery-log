@@ -1,4 +1,4 @@
-<% project_name = 'archery-tracker' %>
+<% project_name = 'archery-log' %>
 
 default: &default
   adapter: postgresql
