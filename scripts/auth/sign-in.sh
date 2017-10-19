@@ -9,9 +9,11 @@ curl "${API}${URL_PATH}" \
   --data '{
     "credentials": {
       "email": "'"${EMAIL}"'",
-      "password": "'"${PASSWORD}"'",
-      "password_confirmation": "'"${PASSWORD}"'"
+      "password": "'"${PASSWORD}"'"
     }
   }'
 
 echo
+
+# run in bash: EMAIL=alicia@test.com PASSWORD=test sh scripts/auth/sign-in.sh
+# token to use: BAhJIiVmZDUzNjkwZGU3MWJjNDRlZmE4ZTdmYzg0ZWRkMGIzYwY6BkVG--4ce3cbfa5f6f1374eabbe1ca1e92fd8d19d75d88
