@@ -1,4 +1,6 @@
-class RoundsController < ApplicationController
+# frozen_string_literal: true
+
+class RoundsController < ProtectedController
   before_action :set_round, only: [:show, :update, :destroy]
 
   # GET /rounds
@@ -15,7 +17,7 @@ class RoundsController < ApplicationController
 
   # POST /rounds
   def create
-    @round = Round.new(round_params)
+    @round = current_user.rounds.build(round_params)
 
     if @round.save
       render json: @round, status: :created, location: @round
@@ -46,6 +48,6 @@ class RoundsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def round_params
-      params.require(:round).permit(:date, :range_name, :range_type, :bow_class, :arrows_per_end, :number_of_ends, :total_score)
+      params.require(:round).permit(:date, :range_name, :range_type, :bow_class, :arrows_per_end, :number_of_ends, :total_score, :user_id)
     end
 end
