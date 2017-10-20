@@ -5,7 +5,7 @@ class RoundsController < ProtectedController
 
   # GET /rounds
   def index
-    @rounds = Round.all
+    @rounds = current_user.rounds.all
 
     render json: @rounds
   end
