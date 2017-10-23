@@ -1,5 +1,41 @@
-Full Stack Project Backend
+<h1>Archery Log Full-Stack Project - API</h1>
 
-Put content here...
+<h3>About the App:</h3>
+<p>This application is a log you can use to track your progression as an archer. No more writing your progress down with paper and pencil or an Excel spreadsheet. This is an app you can access anywhere, anytime.</p>
+<p>Just sign up for the app with an email address and password, log in, and track your best rounds from the day with ease. Log info such as range name, range type, bow class, arrows per end, number of ends, and total score. After you log some rounds, you can always go back later and edit information or delete if you wish to clean up your log.</p>
 
-My deployed heroku app is located at: https://archery-log-api.herokuapp.com/
+<h3>API Details:</h3>
+list of the end points and the type of requests you can make to them
+
+<h3>Link to the Client Repo:</h3> <p>https://github.com/aheaton/archery-log-client</p>
+
+<h3>Links to deployed client and API sites:</h3>
+<p>https://aheaton.github.io/archery-log-client/</p>
+<p>https://archery-log-api.herokuapp.com/</p>
+
+<h3>Technologies Used:</h3>
+<ul>
+<li>Ruby on Rails</li>
+<li>Heroku</li>
+</ul>
+
+<h3>Planning and Strategy:</h3>
+<p>Once I came up with the idea to build an archery log, I planned thoroughly by writing user stories, creating wireframes, and drawing an ERD. I also came up with a general schedule to guide my development approach which included the following:</p>
+<ol>
+<li>Basic setup of API template</li>
+<li>Basic setup of browser template</li>
+<li>Scaffold Rounds resource and test using curl</li>
+<li>Connect to Users resource and test using curl</li>
+<li>Set-up the client with basic structure</li>
+<li>Add authentication functionality to client and test in browser</li>
+<li>Add rounds functionality to client and test in browser</li>
+<li>Test all functionality end-to-end</li>
+<li>Add styling and optimize for mobile</li>
+</ol>
+<p>As I came across difficult problems, I used many resources to become unstuck. First and foremost, I used other similar examples from class rather than trying to reinvent the wheel given the short development timeframe. Also, I used online forums such as Stack Overflow extensively. Lastly, communicating with other developers who have encountered similar issues was key in resolving issues quickly.</p>
+
+<h3>Future Fixes and Enhancements:</h3>
+<p>Specific to the backend, I would like to break out bow class into another table since a user can have many different types of bows and shoot many rounds with those bows. This would make my code and database cleaner and easier to understand. Also, it would give users the ability to query their rounds based on their bow class.</p>
+
+<h3>ERD:</h3>
+<p>https://imgur.com/a/sOlvC</p>
