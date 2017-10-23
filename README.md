@@ -2,10 +2,19 @@
 
 <h3>About the App:</h3>
 <p>This application is a log you can use to track your progression as an archer. No more writing your progress down with paper and pencil or an Excel spreadsheet. This is an app you can access anywhere, anytime.</p>
-<p>Just sign up for the app with an email address and password, log in, and track your best rounds from the day with ease. Log info such as range name, range type, bow class, arrows per end, number of ends, and total score. After you log some rounds, you can always go back later and edit information or delete if you wish to clean up your log.</p>
+<p>Just sign up for the app with an email address and password, log in, and track your best rounds from the day with ease. You can log info such as range name, range type, bow class, arrows per end, number of ends, and total score. After you log some rounds, you can always go back later and edit information, or delete if you wish to clean up your log.</p>
 
-<h3>API Details:</h3>
-list of the end points and the type of requests you can make to them
+<h3>API Endpoints:</h3>
+| HTTP Verb   | URI Pattern            | Controller#Action |
+|-------------|------------------------|-------------------|
+| POST        | `/sign-up`             | `users#signup`    |
+| POST        | `/sign-in`             | `users#signin`    |
+| DELETE      | `/sign-out/:id`        | `users#signout`   |
+| PATCH       | `/change-password/:id` | `users#changepw`  |
+| GET         | `/rounds`              | `rounds#index`    |
+| POST        | `/rounds`              | `rounds#create`   |
+| GET         | `/rounds/:id`          | `rounds#show`     |
+| PATCH       | `/rounds/:id`          | `rounds#update`   |
 
 <h3>Link to the Client Repo:</h3> <p>https://github.com/aheaton/archery-log-client</p>
 
@@ -35,7 +44,7 @@ list of the end points and the type of requests you can make to them
 <p>As I came across difficult problems, I used many resources to become unstuck. First and foremost, I used other similar examples from class rather than trying to reinvent the wheel given the short development timeframe. Also, I used online forums such as Stack Overflow extensively. Lastly, communicating with other developers who have encountered similar issues was key in resolving issues quickly.</p>
 
 <h3>Future Fixes and Enhancements:</h3>
-<p>Specific to the backend, I would like to break out bow class into another table since a user can have many different types of bows and shoot many rounds with those bows. This would make my code and database cleaner and easier to understand. Also, it would give users the ability to query their rounds based on their bow class.</p>
+<p>Specific to the backend, I would like to break out bow class into another table since a user can have many different types of bows and shoot many rounds with those bows. This would make my code and database cleaner and easier to understand. Also, it would provide users the ability to query their rounds based on their bow class.</p>
 
 <h3>ERD:</h3>
 <p>https://imgur.com/a/sOlvC</p>
