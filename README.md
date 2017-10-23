@@ -5,16 +5,54 @@
 <p>Just sign up for the app with an email address and password, log in, and track your best rounds from the day with ease. You can log info such as range name, range type, bow class, arrows per end, number of ends, and total score. After you log some rounds, you can always go back later and edit information, or delete if you wish to clean up your log.</p>
 
 <h3>API Endpoints:</h3>
-| HTTP Verb   | URI Pattern            | Controller#Action |
-|-------------|------------------------|-------------------|
-| POST        | `/sign-up`             | `users#signup`    |
-| POST        | `/sign-in`             | `users#signin`    |
-| DELETE      | `/sign-out/:id`        | `users#signout`   |
-| PATCH       | `/change-password/:id` | `users#changepw`  |
-| GET         | `/rounds`              | `rounds#index`    |
-| POST        | `/rounds`              | `rounds#create`   |
-| GET         | `/rounds/:id`          | `rounds#show`     |
-| PATCH       | `/rounds/:id`          | `rounds#update`   |
+
+<table style="width:30%">
+  <tr>
+    <th>HTTP Verb</th>
+    <th>URI Pattern</th>
+    <th>Controller#Action</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>`/sign-up`</td>
+    <td>`users#signup`</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>`/sign-in`</td>
+    <td>`users#signin`</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>`/sign-out/:id`</td>
+    <td>`sers#signout`</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>`/change-password/:id`</td>
+    <td>`users#changepw`</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/rounds`</td>
+    <td>`rounds#index`</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>`/rounds`</td>
+    <td>`rounds#create`</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>`/rounds/:id`</td>
+    <td>`rounds#show`</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>`/rounds/:id`</td>
+    <td>`rounds#update`</td>
+  </tr>
+</table>
 
 <h3>Link to the Client Repo:</h3> <p>https://github.com/aheaton/archery-log-client</p>
 
