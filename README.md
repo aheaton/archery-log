@@ -19,43 +19,43 @@
   </tr>
   <tr>
     <td>POST</td>
-    <td>`/sign-up`</td>
-    <td>`users#signup`</td>
+    <td>/sign-up</td>
+    <td>users#signup</td>
   </tr>
   <tr>
     <td>POST</td>
-    <td>`/sign-in`</td>
-    <td>`users#signin`</td>
+    <td>/sign-in</td>
+    <td>users#signin</td>
   </tr>
   <tr>
     <td>DELETE</td>
-    <td>`/sign-out/:id`</td>
-    <td>`sers#signout`</td>
+    <td>/sign-out/:id</td>
+    <td>users#signout</td>
   </tr>
   <tr>
     <td>PATCH</td>
-    <td>`/change-password/:id`</td>
-    <td>`users#changepw`</td>
+    <td>/change-password/:id</td>
+    <td>users#changepw</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/rounds`</td>
-    <td>`rounds#index`</td>
+    <td>/rounds</td>
+    <td>rounds#index</td>
   </tr>
   <tr>
     <td>POST</td>
-    <td>`/rounds`</td>
-    <td>`rounds#create`</td>
+    <td>/rounds</td>
+    <td>rounds#create</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>`/rounds/:id`</td>
-    <td>`rounds#show`</td>
+    <td>/rounds/:id</td>
+    <td>rounds#show</td>
   </tr>
   <tr>
     <td>PATCH</td>
-    <td>`/rounds/:id`</td>
-    <td>`rounds#update`</td>
+    <td>/rounds/:id</td>
+    <td>rounds#update</td>
   </tr>
 </table>
 
