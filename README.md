@@ -57,6 +57,11 @@
     <td>/rounds/:id</td>
     <td>rounds#update</td>
   </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/rounds/:id</td>
+    <td>rounds#destroy</td>
+  </tr>
 </table>
 
 <h3>Technologies Used:</h3>
